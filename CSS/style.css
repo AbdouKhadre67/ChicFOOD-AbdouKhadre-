@@ -1,0 +1,260 @@
+body {
+    background: #19181D;
+    padding: 0;
+    margin: 0;
+}
+
+/* Navigateur start */
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+.logo {
+    width: 200px;
+    height: 70px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 20px; 
+}
+
+
+.menu ul li a {
+    text-decoration: none;
+    color: #000; 
+    padding: 8px 16px;
+}
+
+.menu ul li a:hover {
+    color: white; 
+    background-color: #940F12; 
+    border-radius: 4px;
+}
+
+/* Navigation End */
+
+
+/* Acceuil start */
+.Acceuil {
+    height: 400px;
+    background-image:url("../ressources/bg3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+   
+}
+
+.title{
+    padding: 20px;
+    color: #940F12;
+    width: 50%;
+    /* text-align: center;     */
+}
+
+.title button {
+    padding: 10px 20px;
+    font-size: 1em;
+    background-color:#ab0a0d;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.title button:hover {
+    background-color:#940F12;
+}
+
+span {
+    text-decoration: underline;
+    color: #940F12;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0 20px;
+    font-size: 50px;
+    font-family: 'Times New Roman', Times, serif;
+}
+/* Acceuil End */
+
+/* Menu Start */
+.Menu {
+    height: 500px;
+}
+.Menu .col {
+    border-radius: 10px;
+    box-shadow: 0 8px 11px rgba(0, 0, 0, 0.3);
+    margin-left: 20px;
+    padding: 20px;
+}
+
+.Menu .col img {
+    width: 150px;  
+    height: 150px;
+    border-radius: 50%; 
+    object-fit: cover;
+}
+
+
+/* Menu End */
+
+
+/* About Start */
+.about-us {
+    height:350px;
+    background-color: #f4f4f4;
+}
+
+
+.about-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.about-text {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.about-text h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.about-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* About END */
+
+/* Contact Start */
+
+.contact {
+    height: 500px;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.contact-form {
+    background-color:#F1EFEB;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 500px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #940F12;
+    font-size: 1em;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #940F12;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #b90b0e;
+}
+
+/* Contact END */
+
+
+/* Footer Start */
+
+
+footer {
+    /* background-color: rgb(186, 180, 180); */
+    background-color: #940F12;
+    padding: 20px;
+    margin-top: 100px;
+    border: 1px solid red;
+}
+    
+
+.footer-content{
+    text-align: center;
+   color: white;
+   font-weight: bold;
+}
+    
+.social-icon{
+    color: white;
+}
+.social-icon:hover {
+    color: rgb(181, 176, 176);
+}
+
+@media (max-width: 768px) {
+
+    nav .logo {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    nav .menu {
+        display: none;
+    }
+    .about-us{
+        height: auto;
+        margin-top: 350px;
+        margin-bottom: 20px;
+    }
+    
+    .about-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Footer END */
